@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- LAYAR 1: AWAL (WELCOME SCREEN) -->
+    <div id="initial-screen">
+        <h1>Halloo nadia putriani !</h1>
+        <h2>Happy anniversary sayang❤️</h2>
+        <h2>29-07-2025</h2>
+        <button id="initial-btn">Ayo Diklik Na</button>
+    </div>
+
+    <!-- LAYAR 2: GALERI UTAMA -->
+    <div id="gallery-screen" class="hidden">
+        <h1>Happy Anniversary Sayang❤️</h1>
+        <p class="typewriter-text">Selamat anniversary kita yang pertama, Sayang. 🤍
+            Tidak terasa sudah satu tahun kita berjalan bersama. Rasanya seperti baru kemarin kita saling mengenal, saling malu untuk memulai percakapan, lalu perlahan tumbuh menjadi dua orang yang saling mengisi kehidupan satu sama lain.
+            Dalam satu tahun ini, kita sudah melewati banyak hal. Ada tawa yang membuat kita bahagia, ada air mata yang mengajarkan kita arti kesabaran, ada perbedaan yang membuat kita belajar memahami, dan ada rindu yang membuat kita semakin menyadari betapa berharganya kehadiran satu sama lain.</p>
+        <p class="typewriter-text">29-07-2025</p>
+        <div class="gallery">
+        </div>
+        <div class="button-group">
+            <button onclick="showInitial()">Kembali</button>
+            <button onclick="showPhotoSlide()">Next</button>
+        </div>
+    </div>
+
+    <!-- LAYAR 3: SLIDE GALERI FOTO (4 FOTO - CAROUSEL) -->
+    <div id="photo-slide-screen" class="hidden">
+        <h1>Bersamamu Aku Belajar Mencintai 🤍</h1>
+        <p class="typewriter-text">Terima kasih karena sudah memilih untuk tetap bertahan bersamaku sampai hari ini. Terima kasih sudah menjadi tempatku pulang, tempatku bercerita, tempatku mengeluh, dan tempatku merasa dicintai.
+            Mungkin aku belum menjadi pasangan yang sempurna. Aku masih sering melakukan kesalahan, terkadang egois, keras kepala, atau tanpa sadar membuatmu kecewa. Untuk semua itu, aku benar-benar minta maaf. Terima kasih karena kamu selalu memberi kesempatan untuk memperbaiki semuanya dan tidak mudah menyerah dengan hubungan kita.
+            Kamu adalah salah satu alasan mengapa aku percaya bahwa cinta yang tulus itu benar-benar ada. Bersamamu aku belajar bahwa mencintai bukan hanya tentang kata "aku sayang kamu", tetapi tentang hadir, menjaga, mendengarkan, mengerti, dan tetap memilih satu sama lain meski keadaan tidak selalu mudah.❤️</p>
+        <div class="photo-carousel">
+            <div class="carousel">
+                <div class="carousel-track">
+                    <img class="carousel-slide active" src="images/1.jpeg" alt="Foto Galeri 1" loading="lazy">
+                    <img class="carousel-slide" src="images/2.jpeg" alt="Foto Galeri 2" loading="lazy">
+                    <img class="carousel-slide" src="images/3.jpeg" alt="Foto Galeri 3" loading="lazy">
+                    <img class="carousel-slide" src="images/4.jpg" alt="Foto Galeri 4" loading="lazy">
+                </div>
+                <button type="button" class="carousel-arrow carousel-arrow--prev" aria-label="Sebelumnya">❮</button>
+                <button type="button" class="carousel-arrow carousel-arrow--next" aria-label="Berikutnya">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" class="carousel-indicator active" aria-label="Foto 1"></button>
+                <button type="button" class="carousel-indicator" aria-label="Foto 2"></button>
+                <button type="button" class="carousel-indicator" aria-label="Foto 3"></button>
+                <button type="button" class="carousel-indicator" aria-label="Foto 4"></button>
+            </div>
+        </div>
+        <div class="button-group">
+            <button onclick="showGallery()">Kembali</button>
+            <button onclick="showMemoryGallery()">Next</button>
+        </div>
+    </div>
+
+    <!-- LAYAR 4: GALERI KENANGAN (BANYAK FOTO ANIMASI) -->
+    <div id="memory-gallery-screen" class="hidden">
+        <h1>💕 Galeri Kenangan Spesial 💕</h1>
+        <p>Setiap foto menceritakan kisah cinta kita...</p>
+        <div class="memory-gallery">
+            <img src="images/1.jpeg" alt="Kenangan 1" loading="lazy">
+            <img src="images/2.jpeg" alt="Kenangan 2" loading="lazy">
+            <img src="images/3.jpeg" alt="Kenangan 3" loading="lazy">
+            <img src="images/4.jpg" alt="Kenangan 4" loading="lazy">
+            <img src="images/6.jpg" alt="Kenangan 5" loading="lazy">
+            <img src="images/7.jpg" alt="Kenangan 6" loading="lazy">
+            <img src="images/8.jpg" alt="Kenangan 7" loading="lazy">
+            <img src="images/9.jpg" alt="Kenangan 8" loading="lazy">
+            <img src="images/21.jpg" alt="Kenangan 9" loading="lazy">
+            <img src="images/11.jpg" alt="Kenangan 10" loading="lazy">
+            <img src="images/12.jpg" alt="Kenangan 11" loading="lazy">
+            <img src="images/13.jpg" alt="Kenangan 12" loading="lazy">
+            <img src="images/14.jpg" alt="Kenangan 13" loading="lazy">
+            <img src="images/0.jpg" alt="Kenangan 14" loading="lazy">
+            <img src="images/16.jpg" alt="Kenangan 15" loading="lazy">
+            <img src="images/17.jpg" alt="Kenangan 16" loading="lazy">
+             <img src="images/18.jpg" alt="Kenangan 10" loading="lazy">
+            <img src="images/19.jpg" alt="Kenangan 11" loading="lazy">
+            <img src="images/20.jpg" alt="Kenangan 12" loading="lazy">
+            <img src="images/10.jpg" alt="Kenangan 13" loading="lazy">
+
+        </div>
+        <p class="memory-message">❤️ Happy anniversary sayang ❤️</p>
+        <p class="memory-message">Gianda ❤️ Nadia</p>
+        <div class="button-group">
+            <button onclick="showCake()">Next</button>
+        </div>
+    </div>
+
+
+    <!-- LAYAR 6: KUE SPESIAL -->
+    <div id="cake-screen" class="hidden">
+        <h1>Harapan 🤍</h1>
+        <p class="typewriter-text">Aku berharap satu tahun ini hanyalah awal dari perjalanan panjang kita. Semoga nanti kita masih bisa merayakan anniversary kedua, ketiga, kelima, bahkan sampai puluhan tahun ke depan. Semoga kita selalu diberi kesehatan, kebahagiaan, kesabaran, dan kekuatan untuk menghadapi setiap ujian bersama.
+            Aku ingin terus menemanimu mengejar semua impianmu, menjadi orang yang selalu ada saat kamu bahagia maupun ketika dunia terasa berat.
+            Terima kasih sudah menjadi bagian terindah dalam hidupku. Terima kasih sudah membuatku merasa begitu dicintai dan berharga.
+            Aku tidak tahu apa yang akan terjadi di masa depan, tetapi satu hal yang aku tahu, selama kita masih saling menggenggam dan sama-sama berjuang, aku ingin tetap berjalan bersamamu. 🤍</p>
+        <img src="images/7.jpg" alt="Kue Ulang Tahun" loading="lazy">
+        <div class="button-group">
+        <p class="memory-message">Gianda ❤️ Nadia</p>
+            <button onclick="showMemoryGallery()">kita</button>
+        </div>
+    </div>
+
+    <!-- KONTROL MUSIK DAN TEKS -->
+    <button id="typewriter-toggle" class="music-button" onclick="startTypewriter(true)" style="left: clamp(1rem, 5vw, 1.5rem); right: auto;">Tampilkan Teks</button>
+    <button id="music-toggle" class="music-button" onclick="toggleMusic()">Putar Musik</button>
+
+    <!-- AUDIO -->
+    <audio id="song" loop preload="auto">
+        <source src="music/A2.mpeg" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Small inline script to ensure initial button works even if external script fails -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('initial-btn');
+            if (btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const init = document.getElementById('initial-screen');
+                    const gal = document.getElementById('gallery-screen');
+                    if (init) init.classList.add('hidden');
+                    if (gal) gal.classList.remove('hidden');
+                    try { if (typeof startTypewriter === 'function') startTypewriter(true); } catch (e) {}
+                });
+            }
+        });
+    </script>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+</body>
+</html>
